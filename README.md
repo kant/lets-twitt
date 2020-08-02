@@ -1,6 +1,6 @@
 # LetSTwitt
 
-This is a Twitter Clone . Creating for learning Purposes.
+This is a Twitter Clone . was Created for learning Purposes.
 Will not be used as any kind of Business, or Reklaming.
 It will stay as a Learning project and will not be treated as any kind of real world Websites.
 
