@@ -1,0 +1,43 @@
+<div class="column is-half">
+  <article class="media box">
+    <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="../assets/images/mamKar.jpg">
+    </p>
+    </figure>
+      <div class="media-content">
+      </div>
+  </article>
+</div>
+
+<% @tweets.each do |tweet| %>
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="app/assets/images/mamKar.jpg">
+        </figure>
+      </div>
+      <div class="mdeia-content">
+        <div class="content">
+          <strong>Danito</strong> <br>
+          <small>@danito997</small> <br>
+          <p><%= tweet.twet %></p>
+        </div>
+      </div>
+      <nav class="level-left is-mobile">
+        <%= link_to tweet, class: "level-item " do %>
+          <%= image_tag("look", size: "20") %>
+        <%end%>
+        <%= link_to edit_tweet_path(tweet), class: "level-item " do %>
+          <%= image_tag("edit", size: "20") %>
+        <%end%>
+        <%= link_to tweet, method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
+           <%= image_tag("delete", size: "20") %>
+        <%end%>
+
+      </nav>
+
+    </article>
+  </div>
+<%end%>
