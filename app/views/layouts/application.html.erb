@@ -24,7 +24,7 @@
     <nav class="navbar is-warning">
       <div class="navbar-brand">
         <%= link_to root_path class: "navbar-item" do %>
-          <h1 class= "title is-10 ">LetsTwitt</h1>
+          <h1 class= "title is-10 mt-2 ml-2">LetsTwitt</h1>
         <%end%>
         <div class="navbar-burger burger" data-target="navbarExample">
           <span></span>
@@ -36,7 +36,10 @@
         <div class="navbar-end">
         <div class="field is-grouped">
           <p class="control">
-            <%= link_to "New Tweet", new_tweet_path, class: "button is-info is-inverted" %>
+            <%= link_to "New Tweet", new_tweet_path, class: "button is-info mt-2 mb-2 mr-2" %>
+          </p>
+          <p class="control">
+            <%= link_to "Sign Up", new_user_registration_path, class: "button is-info mt-2 mb-2 mr-2" %>
           </p>
         </div>
         </div>
