@@ -1,44 +1,34 @@
-<div class="column is-one-quarter">
-	<nav class="panel">
-		<p class="panel-heading">Profile</p>
-		<div class="panel-block">
-			<article class="media">
-				<div class="media-left">
-					<figure class="image is-64x64">
-						 <%= image_tag("mamKar") %>
-					</figure>
-				</div>
-				<div class="media-content">
-					<div class="content">
-						<p>
-							<strong><%= current_user.name %></strong><br />
-							<small><%= current_user.username %></small>
-						</p>
-					</div>
-				</div>
-			</article>
-		</div>
-		<div class="panel-block">
-			<div class="level is-mobile">
-				<div class="level-item has-centered-text">
-					<div>
-						<p class="heading">Tweets</p>
-						<p class="title is-6"><%= current_user.tweets.count %></p>
-					</div>
-				</div>
-				<div class="level-item has-centered-text">
-					<div>
-						<p class="heading">Following</p>
-						<p class="title is-6">123</p>
-					</div>
-				</div>
-					<div class="level-item has-centered-text">
-					<div>
-						<p class="heading">Followers</p>
-						<p class="title is-6">465K</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+<div class="card">
+  <div class="card-image">
+    <figure class=" image is-128x128 ml-5 mt-6">
+       <%= image_tag("mamKar") %>
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+           <%= image_tag("mamKar") %>
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4"><%= current_user.name %></p>
+        <p class="subtitle is-6"><%= current_user.username %></p>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <div class="card-footer-item">
+        <p>Following</p>
+        <small class="ml-3">123</small>
+      </div>
+      <div class="card-footer-item">
+        <p>Followers</p>
+        <small class="ml-3">123k</small>
+      </div>
+      <div class="card-footer-item">
+        <p> Tweets</p>
+        <small class="ml-3"><%= current_user.tweets.count %></small>
+      </div>
+  </footer>
+  </div>
 </div>
