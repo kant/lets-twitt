@@ -15,11 +15,12 @@
       <p class="image is-32x32 is-flex ml-2">
         <%= image_tag("mamKar") %>
       </p>
-      <h5 class="ml-2">Danito</h5>
+      <h5 class="ml-2"><%= tweet.user.name %></h5>
       </header>
       <div class="card-content">
         <div class="content">
           <p><%= tweet.twet %></p>
+          
         </div>
         <time>
           <%= tweet.created_at %>
