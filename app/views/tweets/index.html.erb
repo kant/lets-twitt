@@ -1,7 +1,12 @@
 
 <article class="media">
   <figure class="media-left">
-    <%= render 'trends' %>
+    <% if user_signed_in? %>
+      <%= render 'profile' %>
+    <% else %>
+      <%= render 'trends' %>
+    <% end %>
+    
   </figure>
   <div class="media-content">
     <div class="content">
