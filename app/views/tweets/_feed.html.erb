@@ -1,43 +1,40 @@
-<div class="column is-half">
-  <article class="media box">
-    <figure class="media-left">
-    <p class="image is-64x64">
-      <img src="../assets/images/mamKar.jpg">
+<article class="media is-flex-mobile">
+  <figure class="media-left">
+    <p class="image is-64x64 is-flex">
+      <%= image_tag("mamKar") %>
     </p>
-    </figure>
-      <div class="media-content">
-      </div>
-  </article>
-</div>
+  </figure>
+  <div class="media-content">
+    <%= render "form" %>
+  </div>
 
+</article>
 <% @tweets.each do |tweet| %>
-  <div class="box">
-    <article class="media">
-      <div class="media-left">
-        <figure class="image is-64x64">
-          <img src="app/assets/images/mamKar.jpg">
-        </figure>
-      </div>
-      <div class="mdeia-content">
+    <div class="card">
+      <header class="card-header">
+      <p class="image is-32x32 is-flex ml-2">
+        <%= image_tag("mamKar") %>
+      </p>
+      <h5 class="ml-2">Danito</h5>
+      </header>
+      <div class="card-content">
         <div class="content">
-          <strong>Danito</strong> <br>
-          <small>@danito997</small> <br>
           <p><%= tweet.twet %></p>
         </div>
+        <time>
+          <%= tweet.created_at %>
+        </time>
       </div>
-      <nav class="level-left is-mobile">
-        <%= link_to tweet, class: "level-item " do %>
+      <footer class="card-footer">
+        <%= link_to tweet, class: "card-footer-item " do %>
           <%= image_tag("look", size: "20") %>
         <%end%>
-        <%= link_to edit_tweet_path(tweet), class: "level-item " do %>
+        <%= link_to edit_tweet_path(tweet), class: "card-footer-item " do %>
           <%= image_tag("edit", size: "20") %>
         <%end%>
-        <%= link_to tweet, method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
-           <%= image_tag("delete", size: "20") %>
+        <%= link_to tweet, class: "card-footer-item", method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
+          <%= image_tag("delete", size: "20") %>
         <%end%>
-
-      </nav>
-
-    </article>
-  </div>
-<%end%>
+      </footer>
+    </div>
+  <%end%>
