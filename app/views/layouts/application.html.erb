@@ -21,44 +21,11 @@
         <p class="alert"><%= alert %></p>
       </div>
     <%end%>
-    <nav class="navbar is-warning">
-      <div class="navbar-brand">
-        <%= link_to root_path class: "navbar-item" do %>
-          <h1 class= "title is-10 mt-2 ml-2">LetsTwitt</h1>
+    <nav>
+      <div class="nav-wrapper">
+        <%= link_to root_path do%>
+          <h1 class="brand-logo">LetsTwitt</h1>
         <%end%>
-        <div class="navbar-burger burger" data-target="navbarExample">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="navbarExample" class="navbar-menu">
-        <div class="navbar-end">
-        <div class="field is-grouped">
-          <p class="control">
-            <%= link_to "New Tweet", new_tweet_path, class: "button is-info mt-2 mb-2 mr-2" %>
-          </p>
-          <% if user_signed_in? %>
-            <p class="control">
-              <%= link_to 'Edit Profile', edit_user_registration_path,
-              class: "button is-info mt-2 mb-2 mr-2"%>
-            </p>
-            <p class="control">
-              <%= link_to 'LogOut', destroy_user_session_path, method: :delete,
-              class: "button is-info mt-2 mb-2 mr-2"%>
-            </p>
-          <%else%>
-            <p class="control">
-              <%= link_to 'Sign In', new_user_session_path,
-              class: "button is-info mt-2 mb-2 mr-2"%>
-            </p>
-            <p class="control">
-              <%= link_to 'Sign Up', new_user_registration_path,
-              class: "button is-info mt-2 mb-2 mr-2"%>
-            </p>
-          <%end%>
-        </div>
-        </div>
       </div>
     </nav>
     <%= yield %>
