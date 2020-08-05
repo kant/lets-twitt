@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_08_03_110203) do
 
   create_table "tweets", force: :cascade do |t|
-    t.text "twet"
+    t.text "tweet"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
