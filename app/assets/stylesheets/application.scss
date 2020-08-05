@@ -16,4 +16,38 @@
 
 @import "bootstrap";
 
+.logo{
+  font-size: 4rem;
+  color: #f9d56e;
+  text-decoration: none;
+}
+.logo:hover{
+  text-decoration: none;
+  color: #c0a455;
+}
 
+.red-bg {
+  background-color: #e8505b;
+}
+.red-fg{
+  color:  #e8505b;
+}
+
+.white-bg{
+  background-color: #f3ecc2;
+}
+.white-fg{
+  color: #f3ecc2;
+}
+.yellow-bg{
+  background-color: #f9d56e;
+}
+.yellow-fg{
+  color: #f9d56e;
+}
+.blue-fg{
+  color: #14b1ab;
+}
+.blue-bg{
+  background-color: #14b1ab;
+}

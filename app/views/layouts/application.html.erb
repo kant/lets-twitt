@@ -12,20 +12,36 @@
 
   <body>
     <% if flash[:notice] %>
-      <div class="notification is-primary global-notification">
-        <p class="notice"><%= notice %></p>
+      <div class="alert alert-success" style="margin: 0;">
+        <p><%= notice %></p>
       </div>
     <%end%>
     <% if flash[:alert] %>
-      <div class="notification is-danger global-notification">
-        <p class="alert"><%= alert %></p>
+      <div class="alert alert-danger" style="margin: 0;">
+        <p><%= alert %></p>
       </div>
     <%end%>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
-      <%= link_to "LetSTwitt", root_path, class: "brand-logo"%>
+    <nav class="navbar navbar-expand-lg bg-dark" >
+      <%= link_to "LetSTwitt", root_path, class: "brand-logo logo"%>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
+      <% if user_signed_in?%>
+        <li class="nav-item">
+          <%= link_to "Edit Profile", edit_user_registration_path, class: "btn blue-bg white-fg" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"btn blue-bg white-fg" %>
+        </li>
+      <%else%>
+        <li class="nav-item">
+          <%= link_to 'Sign In', new_user_session_path, class: "btn blue-bg white-fg" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Sign Up', new_user_registration_path, class: "btn blue-bg white-fg" %>
+        </li>
+      <%end%>
+
     </nav>
 
 
