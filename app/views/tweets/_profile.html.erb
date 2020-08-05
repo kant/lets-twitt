@@ -1,29 +1,19 @@
 <div class="card">
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="s-img">
-           <%= image_tag("edit") %>
-        </figure>
-      </div>
-      <div class="media-content">
-        <p class="title is-10"><%= current_user.name %></p>
-        <p class="subtitle is-6"><%= current_user.username %></p>
-      </div>
-    </div>
-    <footer class="card-footer">
-      <div class="card-footer-item">
-        <p>Following</p>
-        <small class="ml-3">123</small>
-      </div>
-      <div class="card-footer-item">
-        <p>Followers</p>
-        <small class="ml-3">123k</small>
-      </div>
-      <div class="card-footer-item">
-        <p> Tweets</p>
-        <small class="ml-3"><%= current_user.tweets.count %></small>
-      </div>
-  </footer>
+  <div class="s-img">
+    <%= image_tag("mamKar", class:"card-img-top")%>
+  </div>
+  <div class="card-body blue-bg white-fg">
+  <h4 class="card-title"><%= current_user.name %></h4>
+  <p class="card-text"><%= current_user.username %></p>
+  <hr>
+  <p class="card-link">
+  <strong> Tweets: <span><%= current_user.tweets.count %></span></strong>
+  </p>
+  <p class="card-link">
+  <strong>Following: <span>123</span></strong>
+  </p>
+  <p class="card-link">
+  <strong>Followers: <span>123k</span></strong>
+  </p>
   </div>
 </div>
