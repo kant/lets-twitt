@@ -1,27 +1,17 @@
-
-
-
-
-
-
-
-
-<article class="media">
-  <figure class="media-left">
+<div class="main-wraper">
+  <div class="left-wraper">
     <% if user_signed_in? %>
       <%= render 'profile' %>
     <% else %>
       <%= render 'trends' %>
     <% end %>
-    
-  </figure>
-  <div class="media-content">
-    <div class="content">
-      <%= render 'feed' %>
-    </div>
   </div>
-  <div class="media-right">
+  <div class="mid-wraper">
+    <%= render 'feed' %>
+  </div>
+  <div class="right-wraper">
     <%= render 'who-to-follow' %>
   </div>
-  
-</article>
+</div>
+
+

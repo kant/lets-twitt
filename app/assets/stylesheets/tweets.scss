@@ -1,3 +1,36 @@
 // Place all the styles related to the Tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.main-wraper{
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.left-wraper{
+  width: 20%;
+  margin: 15px;
+}
+
+.mid-wraper{
+  width: 50%;
+  margin: 15px;
+}
+
+.right-wraper{
+  width: 20%;
+  margin: 15px;
+}
+
+.s-img{
+  width: 20px;
+  height: 20px;
+}
+
+.m-img{
+  width: 3rem;
+  height: 3rem;
+}

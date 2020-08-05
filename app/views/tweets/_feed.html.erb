@@ -1,8 +1,8 @@
 <article class="media is-flex-mobile">
 <% if user_signed_in? %>
   <figure class="media-left">
-    <p class="image is-64x64 is-flex">
-      <%= image_tag("mamKar") %>
+    <p class="s-img">
+      <%= image_tag("edit") %>
     </p>
   </figure>
   <div class="media-content">
@@ -13,8 +13,8 @@
 <% @tweets.each do |tweet| %>
     <div class="card mb-5 mt-5">
       <header class="card-header">
-      <p class="image is-32x32 is-flex ml-2">
-        <%= image_tag("mamKar") %>
+      <p class="s-img">
+        <%= image_tag("edit") %>
       </p>
       <h5 class="ml-2"><%= tweet.user.name %></h5>
       <small class="ml-3"> <%= tweet.user.username %> </small>
