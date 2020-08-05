@@ -21,13 +21,16 @@
         <p class="alert"><%= alert %></p>
       </div>
     <%end%>
-    <nav>
-      <div class="nav-wrapper">
-        <%= link_to root_path do%>
-          <h1 class="brand-logo">LetsTwitt</h1>
-        <%end%>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+      <%= link_to "LetSTwitt", root_path, class: "brand-logo"%>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
-    <%= yield %>
+
+
+      <%= yield %>
+    
+
   </body>
 </html>
