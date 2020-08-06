@@ -1,46 +1,40 @@
-<article class="media is-flex-mobile">
-<% if user_signed_in? %>
-  <figure class="media-left">
-    <p class="s-img">
-      <%= image_tag("edit") %>
-    </p>
-  </figure>
-  <div class="media-content">
-    <%= render "form" %>
-  </div>
-<%end%>
-</article>
-<% @tweets.each do |tweet| %>
-    <div class="card mb-5 mt-5">
-      <header class="card-header">
-      <p class="s-img">
-        <%= image_tag("edit") %>
-      </p>
-      <h5 class="ml-2"><%= tweet.user.name %></h5>
-      <small class="ml-3"> <%= tweet.user.username %> </small>
-
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <p><%= tweet.tweet %></p>
-          
-        </div>
-        <time>
-          <%= tweet.created_at %>
-        </time>
-      </div>
-      <% if user_signed_in? %>
-        <footer class="card-footer">
-        <%= link_to tweet, class: "card-footer-item " do %>
-          <%= image_tag("look", size: "20") %>
-        <%end%>
-        <%= link_to edit_tweet_path(tweet), class: "card-footer-item " do %>
-          <%= image_tag("edit", size: "20") %>
-        <%end%>
-        <%= link_to tweet, class: "card-footer-item", method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
-          <%= image_tag("delete", size: "20") %>
-        <%end%>
-      </footer>
-      <%end%>
+<div class="media">
+  <% if user_signed_in?%>
+    <%= image_tag("mamKar", class: "align-self-center mr-3 s-img") %>
+    <div class="media-body"> 
+      <%= render "form" %>
     </div>
   <%end%>
+</div>
+
+<ul class="list-unstyled">
+  <% @tweets.each do |tweet| %>
+    <div class="media mt-4">
+      <%= image_tag("mamKar", class: "mr-3 s-img" ) %>
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">
+          <%= tweet.user.name %>
+          <small><%= tweet.user.username %></small>
+        </h5>
+        <p><%= tweet.tweet %></p>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-header"><%= tweet.created_at %></div>
+            <%= link_to tweet, class: "btn gr-dark-bg ygr-light-fg" do %>
+              <%= image_tag("look", size: "20") %>
+            <%end%>
+            <%= link_to edit_tweet_path(tweet), class: "btn gr-dark-bg ygr-light-fg" do %>
+              <%= image_tag("edit", size: "20") %>
+            <%end%>
+            <%= link_to tweet, class: "btn gr-dark-bg ygr-light-fg", method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
+              <%= image_tag("delete", size: "20") %>
+            <%end%>
+          </div>
+      </div>
+      </div>
+    </div>
+  <%end%>
+</ul>
+
+
+
