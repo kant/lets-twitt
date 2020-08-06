@@ -21,7 +21,11 @@
         </p>
         <div class="card">
           <div class="card-body">
-            <div class="card-header"><%= tweet.created_at %></div>
+            <div class="card-header">
+              <%= tweet.created_at.strftime("%Y-%m-%d") %> 
+              at 
+              <%= tweet.created_at.strftime("%H : %M") %>
+            </div>
             <%= link_to tweet, class: "btn gr-dark-bg ygr-light-fg" do %>
               <%= image_tag("look", size: "20") %>
             <%end%>
