@@ -28,10 +28,12 @@ gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'bulma-rails', '~> 0.9.0'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
+gem "mini_magick"
+gem "carrierwave"
+gem "mini_magick"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
