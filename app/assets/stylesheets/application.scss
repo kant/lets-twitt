@@ -22,3 +22,18 @@ $lightBrown: #dca08b;
 $blue: #6f9dc4;
 $darkPink:#f08784;
 $purple:#5a3c78;
+
+.logo{
+  color: $milkyWhite;
+  font-size: 3rem;
+}
+
+.nav-bg{
+  background-color: $darkPink;
+}
+
+.btn-special{
+  background-color: $blue;
+  color: $milkyWhite;
+  list-style: none;
+}
