@@ -2,8 +2,8 @@
   <div class="form-group-mb-2">
     <%= simple_form_for(@tweet) do |f| %>
     <%= f.error_notification %>
-    <%= f.input :tweet, label: "Tweet about it", input_html: {class: "form-control"}, wrapper: false, label_html: {class: "form-control-plaintext"}, placeholder: "Compose a new Tweet..." %>
-    <%= f.button :submit, class: "btn gr-dark-bg ygr-light-fg" %>
+    <%= f.input :tweet, label: "Tweet about it", input_html: {class: "form-control"}, wrapper: false, label_html: {class: "form-control-plaintext white-fg"}, placeholder: "Compose a new Tweet..." %>
+    <%= f.button :submit, class: "btn special" %>
     <%end%>
   </div>
 </div>
