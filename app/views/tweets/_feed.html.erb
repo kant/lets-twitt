@@ -21,19 +21,19 @@
         </p>
         <div class="card">
           <div class="card-body">
-            <div class="card-header gr-dark-bg ygr-light-fg">
+            <div class="card-header font">
               <%= tweet.created_at.strftime("%Y-%m-%d") %> 
               at 
               <%= tweet.created_at.strftime("%H : %M") %>
             </div>
             <% if user_signed_in?%>
-              <%= link_to tweet, class: "btn gr-dark-bg ygr-light-fg" do %>
+              <%= link_to tweet, class: "btn" do %>
                 <%= image_tag("look", size: "20") %>
               <%end%>
-              <%= link_to edit_tweet_path(tweet), class: "btn gr-dark-bg ygr-light-fg" do %>
+              <%= link_to edit_tweet_path(tweet), class: "btn " do %>
                 <%= image_tag("edit", size: "20") %>
               <%end%>
-              <%= link_to tweet, class: "btn gr-dark-bg ygr-light-fg", method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
+              <%= link_to tweet, class: "btn", method: :delete, data: {confirm: "You really want  to DELETE this Tweet ?"} do %>
                 <%= image_tag("delete", size: "20") %>
               <%end%>
             <%end%>
