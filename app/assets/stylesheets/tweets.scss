@@ -38,3 +38,13 @@ $purple:#5a3c78;
   color: $milkyWhite;
   font-size: 0.9rem;
 }
+
+.trends {
+  color: $milkyWhite;
+  div {
+    background-color: $lightBrown;
+  }
+  li {
+    background-color: $blue;
+  }
+}
