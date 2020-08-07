@@ -3,4 +3,33 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
+// color variables
+$milkyWhite: #f4f3f7;
+$lightBrown: #dca08b;
+$blue: #6f9dc4;
+$darkPink:#f08784;
+$purple:#5a3c78;
 
+.main-wraper {
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  .left{
+    margin: 1rem;
+    width: 20%;
+  }
+  .mid{
+    margin: 2rem;
+    width: 50%;
+  }
+  .right{
+    margin: 1rem;
+    width: 20%;
+  }
+}
+
+.img-s{
+  width: 4rem;
+  height: 4rem;
+}

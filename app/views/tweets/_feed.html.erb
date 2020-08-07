@@ -1,6 +1,6 @@
 <div class="media">
   <% if user_signed_in?%>
-    <%= image_tag("mamKar", class: "align-self-center mr-3 s-img") %>
+    <%= image_tag("mamKar", class: "align-self-center mr-3 img-s") %>
     <div class="media-body"> 
       <%= render "form" %>
     </div>
@@ -10,7 +10,7 @@
 <ul class="list-unstyled">
   <% @tweets.each do |tweet| %>
     <div class="media mt-4">
-      <%= image_tag("mamKar", class: "mr-3 s-img" ) %>
+      <%= image_tag("mamKar", class: "mr-3 img-s" ) %>
       <div class="media-body">
         <h5 class="mt-0 mb-1">
           <%= tweet.user.name %>
