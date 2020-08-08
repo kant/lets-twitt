@@ -1,33 +1,42 @@
 // color variables
-$milkyWhite: #f4f3f7;
-$lightBrown: #dca08b;
-$blue: #6f9dc4;
-$darkPink:#f08784;
-$purple:#5a3c78;
+$black: 	#1b262c;
+$darkBlue: #0f4c75;
+$lightBlue: #3282b8;
+$lightestBlue: #bbe1fa;
+$yellow: #ffd571;
+$green: #a2de96;
 
 .form{
-  border: 2px solid $lightBrown;
+  border: 2px solid $black;
   margin:auto;
   margin-top: 3rem;
   width: 85%;
   text-align: center;
   padding: 2rem;
-  background-color: $milkyWhite;
+  background-color: $darkBlue;
   h2 {
-    border-bottom: $lightBrown 1px solid;
-    color: $blue;
+    border-bottom: $lightestBlue 1px solid;
+    color: $yellow;
     padding: 1rem;
   }
   div{
-    border-bottom: $lightBrown 1px solid;
-    color: $blue;
+    border-bottom: $lightestBlue 1px solid;
+    color: $yellow;
     padding: 1rem;
   }
   h3,p{
-    color: $blue;
+    color: $yellow;
   }
   
 }
 .label{
   font-size: 1.5rem;
+}
+.submit-btn{
+  background-color: $green;
+  color: $darkBlue;
+  margin: 0.5rem;
+}
+.submit-btn:hover{
+  background-color: #82b179;
 }
