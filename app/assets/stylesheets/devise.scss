@@ -1,0 +1,26 @@
+// color variables
+$milkyWhite: #f4f3f7;
+$lightBrown: #dca08b;
+$blue: #6f9dc4;
+$darkPink:#f08784;
+$purple:#5a3c78;
+
+.form{
+  border: 2px solid $lightBrown;
+  margin:auto;
+  margin-top: 3rem;
+  width: 85%;
+  text-align: center;
+  padding: 2rem;
+  background-color: $milkyWhite;
+  h2 {
+    border-bottom: $lightBrown 1px solid;
+    color: $blue;
+    padding: 1rem;
+  }
+  div{
+    border-bottom: $lightBrown 1px solid;
+    color: $blue;
+    padding: 1rem;
+  }
+}
