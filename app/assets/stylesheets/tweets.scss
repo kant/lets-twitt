@@ -30,6 +30,12 @@ $yellow: #ffd571;
   height: 4rem;
   margin: 1rem;
 }
+.tweet-img{
+  width: 5rem;
+  height: auto;
+  margin: 1rem;
+  border-radius: 50%;
+}
 .profile{
   background-color: $black;
   color: $lightestBlue;
@@ -58,24 +64,31 @@ $yellow: #ffd571;
   }
 }
 
-.media{
-  border: 2px solid white;
-  padding: 0.5rem;
-  color: white;
+.dark-bg{
+  background-color: $darkBlue;
 }
 
-.font{
-  color: blue;
-  font-size: 0.9rem;
-}
 
-.name-bar{
-  color: White;
-  background-color: green;
+.card-name-bar{
+  color: $yellow;
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
   text-align: center;
+  border-bottom: solid $lightestBlue 2px;
+  margin-bottom: 1rem;
+}
 
+.tweet-body{
+  color: snow;
+  border-bottom: solid $lightestBlue 2px;
+  text-align: center;
+  h4{
+    border-bottom: solid $lightestBlue 1px;
+    padding: 1rem;
+  }
+}
+
+.controlers{
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
 }
