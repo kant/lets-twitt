@@ -22,6 +22,7 @@ $darkBlue: #0f4c75;
 $lightBlue: #3282b8;
 $lightestBlue: #bbe1fa;
 $yellow: #ffd571;
+$green: #a2de96;
 
 .logo{
   color: $yellow;
@@ -46,11 +47,15 @@ $yellow: #ffd571;
 body{
   background-color: $lightestBlue;
 }
-// .special{
-//   background-color: $darkPink;
-//   color: $milkyWhite;
-//   margin: 0.5rem;
-// }
-// .white-fg{
-//   color: $milkyWhite;
-// }
+.submit-btn{
+  background-color: $green;
+  color: $darkBlue;
+  margin: 0.5rem;
+}
+.submit-btn:hover{
+  background-color: #82b179;
+}
+.text{
+  font-size: 1rem;
+  color: $darkBlue;
+}
