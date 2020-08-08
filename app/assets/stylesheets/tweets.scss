@@ -4,11 +4,11 @@
 
 
 // color variables
-$milkyWhite: #f4f3f7;
-$lightBrown: #dca08b;
-$blue: #6f9dc4;
-$darkPink:#f08784;
-$purple:#5a3c78;
+$black: 	#1b262c;
+$darkBlue: #0f4c75;
+$lightBlue: #3282b8;
+$lightestBlue: #bbe1fa;
+$yellow: #ffd571;
 
 .main-wraper {
   display: flex;
@@ -31,35 +31,46 @@ $purple:#5a3c78;
   margin: 1rem;
 }
 .profile{
-  background-color: $lightBrown;
-  color: $milkyWhite;
+  background-color: $black;
+  color: $lightestBlue;
   font-size: 0.9rem;
 }
 
+.personal-info{
+  color: $yellow;
+  text-align: center;
+  border-radius: 40%;
+  h2{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+}
 .trends {
-  color: $milkyWhite;
+ 
   div {
-    background-color: $lightBrown;
+   
   }
   li {
-    background-color: $blue;
+    
   }
 }
 
 .media{
-  border: 2px solid $milkyWhite;
+  border: 2px solid white;
   padding: 0.5rem;
-  color: $milkyWhite;
+  color: white;
 }
 
 .font{
-  color: $blue;
+  color: blue;
   font-size: 0.9rem;
 }
 
 .name-bar{
-  color: $milkyWhite;
-  background-color: $darkPink;
+  color: White;
+  background-color: green;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
