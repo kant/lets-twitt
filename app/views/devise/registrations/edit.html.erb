@@ -17,6 +17,9 @@
       <% end %>
     </div>
     <div class="form-group">
+      <%= f.file_field :photo, required: true, input_html: { class: "form-control"}, wrapper: false, label_html: { class: "label" } %>
+    </div>
+    <div class="form-group">
       <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false, input_html: { class: "form-control"}, wrapper: false, label_html: { class: "label" } %>
     </div>
     <div class="form-group">
