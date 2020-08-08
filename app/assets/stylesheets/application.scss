@@ -17,34 +17,40 @@
 @import "bootstrap";
 
 // color variables
-$milkyWhite: #f4f3f7;
-$lightBrown: #dca08b;
-$blue: #6f9dc4;
-$darkPink:#f08784;
-$purple:#5a3c78;
+$black: 	#1b262c;
+$darkBlue: #0f4c75;
+$lightBlue: #3282b8;
+$lightestBlue: #bbe1fa;
+$yellow: #ffd571;
 
 .logo{
-  color: $milkyWhite;
+  color: $yellow;
   font-size: 3rem;
+}
+.logo:hover{
+  color: #ceab5a;
 }
 
 .nav-bg{
-  background-color: $darkPink;
+  background-color: $black;
 }
 
 .btn-special{
-  background-color: $blue;
-  color: $milkyWhite;
+  background-color: $yellow;
+  color: $black;
   list-style: none;
 }
+.btn-special:hover{
+  background-color: #ceab5a;
+}
 body{
-  background-color: $blue;
+  background-color: $lightestBlue;
 }
-.special{
-  background-color: $darkPink;
-  color: $milkyWhite;
-  margin: 0.5rem;
-}
-.white-fg{
-  color: $milkyWhite;
-}
+// .special{
+//   background-color: $darkPink;
+//   color: $milkyWhite;
+//   margin: 0.5rem;
+// }
+// .white-fg{
+//   color: $milkyWhite;
+// }
