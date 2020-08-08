@@ -15,31 +15,41 @@ This project was an [ASSIGNMENT](https://www.theodinproject.com/lessons/authenti
 
 ---
 
-# System Readme
+# How to Run the App ? 
 
----
+--------------------------
+The application is yet under development which means it is still not online. 
+Yet it can be used locally. 
 
-## README
+You need to take these steps : 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* First you need to make sure that you have these:
+  * Ruby
+  * RBENV
+  * Ruby on Rails
+* Then you can clone this Repo into your local machine
+* Open the terminal in the directorty where you cloned this repo
+* Write this in your **TERMINAL**
+  ```
+    $ bundle install
+  ```
+  This command will install all needed Gems 
+* Write this in your **TERMINAL**
+  ```
+    $ rails db:migrate
+  ```
+  This command will create the Database and all needed tables for the App
+* Write this in your **Terminal**
+  ```
+  $ rails s
+  ```
+  Or
 
-Things you may want to cover:
+  ```
+    $ rails server
+  ```
+  Both commands will start runnung a Server on your local machine 
+* Finally you can write this in url tab in your Browser
+  **localhost:3000**
 
-- Ruby version
-
-- System dependencies
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
+Noow open your Editor and start playing with the app like you want :)
