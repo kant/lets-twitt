@@ -5,7 +5,7 @@ Will not be used as any kind of Business, or Reklaming.
 It will stay as a Learning project and will not be treated as any kind of real world Websites.
 
 The main purpose of creating the App was in order to teach myself Ruby on Rails ( Ruby framework).
-There may be Bugs or Issues , so it will not be a perfect App becaus it was just created in order to get more comfortable with the framework.
+There may be Bugs or Issues , so it will not be a perfect App because it was just created in order to get more comfortable with the framework.
 
 Meanwhile i will do my best with it and make it as great as i can.
 
@@ -28,7 +28,7 @@ You need to take these steps :
   * RBENV
   * Ruby on Rails
 * Then you can clone this Repo into your local machine
-* Open the terminal in the directorty where you cloned this repo
+* Open the terminal in the directory where you cloned this repo
 * Write this in your **TERMINAL**
   ```
     $ bundle install
@@ -48,7 +48,7 @@ You need to take these steps :
   ```
     $ rails server
   ```
-  Both commands will start runnung a Server on your local machine 
+  Both commands will start running a Server on your local machine 
 * Finally you can write this in url tab in your Browser
   **localhost:3000**
 
